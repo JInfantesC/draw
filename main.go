@@ -5,14 +5,14 @@ import (
 )
 
 const (
-	W = 2560.0
-	H = 1080.0
+	W = 512.0
+	H = 512.0
 )
 
 func main() {
 	dc := plain.DrawBasic(W, H)
-	dc.SavePNG("basic.png")
+	dc.SavePNG("out/basic.png")
 
 	dc = plain.DrawSin(W, H)
-	dc.SavePNG("sin.png")
+	dc.SavePNG("out/sin.png")
 }
